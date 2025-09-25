@@ -27,7 +27,7 @@ jobs:
         run: ng build --configuration production --base-href "/angular-demo/"
 
       - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist/angular-hello-world
 
