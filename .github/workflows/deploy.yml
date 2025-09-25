@@ -27,7 +27,7 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Build Angular app for GitHub Pages
-        run: ng build --configuration production --output-path=dist/angular-hello-world --base-href "/angular-demo/" --output-mode client
+        run: ng build --configuration production --output-path=dist/angular-hello-world --base-href "/angular-demo/" --output-mode static
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
