@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Angular to GitHub Pages
 
 on:
   push:
@@ -26,8 +26,8 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
-      - name: Build Angular app
-        run: ng build --configuration production --base-href "/angular-demo/"
+      - name: Build Angular app for GitHub Pages
+        run: ng build --configuration production --output-path=dist/angular-hello-world --base-href "/angular-demo/"
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
