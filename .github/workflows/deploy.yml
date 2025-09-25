@@ -33,7 +33,7 @@ jobs:
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/angular-hello-world
+          path: angular-hello-world/dist/angular-hello-world
 
   deploy:
     needs: build
